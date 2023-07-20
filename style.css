@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    color: black;
+    text-align: left;
+  }
+  .page {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 40px;
+    width: 100%;
+      padding: 40px;
+      margin: 0 auto;
+    grid-template-areas: "order payment" "total total";
+    grid-temlate-columns: 1fr 1fr;;
+  }
+  .main-nav {
+    background-color: burlywood;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: heavy;
+  }
+  .logo{
+    height: 60px;
+    top: -2px;
+    Position: relative;
+  }
+  .box{
+    background-color: burlywood;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottm: 20px;
+    width: 100%;
+  }
+  .order {
+    grid-area: order;
+  }
+  .payment {
+    grid-area: payment;
+  }
+  .total {
+    display: grid;
+    grid-area: total;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    color: black solid;
+    font-size: 40px;
+    font-weight: heavy;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+   }
+  .totals-table td:first-child{
+    text-align: left;
+    padding: 10px; 
+  }
+  .totals-table td:last-child {
+    text-align: right;
+    padding: 10px;  
+  }
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .item{
+    display: grid;
+    border-bottom: 2px #885a2d solid;
+    padding: 10px;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+      "quantity title   price"
+      "quantity options price"
+      row-gap: 8px;
+  }
+  .item-quantity {
+    font-weight: bold;
+  }
+  .item-title {
+    font-weight: bold; 
+  }
+  .item-price {
+    grid-area: price;
+    font-weight: bold;
+  }
+  .item-options-list {
+    grid-area: options;
+    color: #B08968;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  .item-option {
+    grid-area: option;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: -200%;
+  }
+  .item:last-child {
+    border-bottom: none;
+  }
+  .input-group: {
+    postion: relative;
+    margin-bottom: 20px;
+  }
+  .user-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 20px;
+    font-size: 20px;
+  }
+  .user-input-label{
+    background-color: burlywood;
+    color: black;
+    font-size: 13px;
+    left: 25px;
+    top: 20px;
+    padding: 0 2px;
+  }
+  button {
+    background-color: burlywood;
+    color: black;
+    border-radius: 50%;
+  }
+  button:hover {
+    color: brown;
+  }
+  
